@@ -13,14 +13,14 @@ const Topic = ({ match }) => {
       <ul>
         { topic.resources.map((subTopic) => (
           <li key={subTopic.id}>
-            <Link to={`/topics/${match.params.topicId}/${subTopic.id}`}>{subTopic.name}</Link>
+            <Link to={`${match.url}/${subTopic.id}`}>{subTopic.name}</Link>
           </li>
         )) }
       </ul>
 
       <hr />
 
-      <Route path={`/topics/:topicId/:subTopicId`} component={Resource} />
+      <Route path={`${match.path}/:subTopicId`} component={Resource} />
     </React.Fragment>
   )
 }

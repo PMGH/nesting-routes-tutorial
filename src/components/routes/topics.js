@@ -3,21 +3,21 @@ import { Link, Route } from 'react-router-dom'
 import topics from '../topics'
 import Topic from '../topic'
 
-const Topics = () => {
+const Topics = ({ match }) => {
   return (
     <div>
       <h1>TOPICS</h1>
       <ul>
         {topics.map(({ name, id }) => (
           <li key={id}>
-            <Link to={`/topics/${id}`}>{name}</Link>
+            <Link to={`${match.url}/${id}`}>{name}</Link>
           </li>
         ))}
       </ul>
 
       <hr />
 
-      <Route path={`/topics/:topicId`} component={Topic} />
+      <Route path={`${match.path}/:topicId`} component={Topic} />
     </div>
   )
 }
