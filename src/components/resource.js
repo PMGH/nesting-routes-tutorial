@@ -7,6 +7,7 @@ const Resource = ({ match }) => {
     <React.Fragment>
       <h3>{topic.name}</h3>
       <p>{topic.description}</p>
+      <a href={topic.url}>More Info.</a>
     </React.Fragment>
   )
 }
