@@ -1,3 +1,3 @@
 # Nested Routes using React Router
 
-![Alt Text](./routes/nested-routes.gif)
+![Alt Text](https://media.giphy.com/media/xThta58YiSqnzIMpkA/giphy.gif)
