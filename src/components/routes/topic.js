@@ -1,5 +1,5 @@
 import React from 'react'
-import topics from './topics'
+import topics from '../topicsData'
 import { Link, Route } from 'react-router-dom'
 import Resource from './resource'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import topics from './topics'
+import topics from '../topicsData'
 
 const Resource = ({ match }) => {
   const topic = topics.find(({ id }) => id === match.params.topicId).resources.find(({ id }) => id === match.params.subTopicId)

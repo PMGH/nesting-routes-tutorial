@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, Route } from 'react-router-dom'
-import topics from '../topics'
-import Topic from '../topic'
+import topics from '../topicsData'
+import Topic from './topic'
 
 const Topics = ({ match }) => {
   return (
