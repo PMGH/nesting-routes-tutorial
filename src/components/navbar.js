@@ -1,14 +1,10 @@
-import React, { Component } from 'react';
-import {
-BrowserRouter as Router,
-Link,
-Route
-} from 'react-router-dom';
-import Home from './routes/home';
-import Topics from './routes/topics';
+import React, { Component } from 'react'
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
+import Home from './routes/home'
+import Topics from './routes/topics'
 
 class NavBar extends Component {
-  render() {
+  render () {
     return (
       <Router>
         <div>
@@ -23,8 +19,8 @@ class NavBar extends Component {
           <Route path='/topics' component={Topics} />
         </div>
       </Router>
-    );
+    )
   }
 }
 
-export default NavBar;
+export default NavBar

@@ -58,4 +58,4 @@ const topics = [
   }
 ]
 
-export default topics;
+export default topics

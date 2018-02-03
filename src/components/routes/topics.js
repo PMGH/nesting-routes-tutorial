@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link, Route } from 'react-router-dom';
-import topics from '../topics';
-import Topic from '../topic';
+import React from 'react'
+import { Link, Route } from 'react-router-dom'
+import topics from '../topics'
+import Topic from '../topic'
 
 const Topics = () => {
   return (
@@ -17,9 +17,9 @@ const Topics = () => {
 
       <hr />
 
-      <Route path={`/topics/:topicId`} component={Topic}/>
+      <Route path={`/topics/:topicId`} component={Topic} />
     </div>
-  );
+  )
 }
 
-export default Topics;
+export default Topics
